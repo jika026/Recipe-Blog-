@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin-inline: auto;
+  font-family: "Outfit", sans-serif;
+  color: hsl(24, 5%, 18%);
+}
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.image-container {
+  max-width: 100%;
+}
+.image-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+h1,
+h3 {
+  font-family: "Young Serif", serif;
+}
+h1 {
+  color: hsl(24, 5%, 18%);
+}
+p,
+li {
+  font-size: 16px;
+  line-height: 2rem;
+}
+hr {
+  width: 100%;
+}
+ul,
+ol {
+  padding: 20px 20px 0;
+  color: hsl(30, 10%, 34%);
+}
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 8px;
+  padding: 2rem 2rem 0;
+}
+.preparation-time > h4 {
+  color: hsl(332, 51%, 32%);
+}
+h3 {
+  color: hsl(14, 45%, 36%);
+}
+ul > li > h4,
+ol > li > h4 {
+  float: left;
+  margin-right: 0.5ch;
+  color: hsl(24, 5%, 18%);
+}
+.nutrients {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0.5rem;
+  column-gap: 50%;
+}
+.nutrients > p:first-child {
+  width: 10%;
+}
+@media (max-width: 400px) {
+  main {
+    padding: 1rem;
+    row-gap: 1.25rem;
+  }
+}
+@media (max-width: 598px) {
+  .nutrients {
+    justify-content: space-between;
+  }
+}
